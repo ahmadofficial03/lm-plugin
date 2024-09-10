@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmldb xmlns="http://www.xml.com/">
+    <table name="block_statcards_data" id="block_statcards_data" comment="Table to store statistics data" >
+        <fields>
+            <field name="id" type="int" length="10" unsigned="true" notnull="true" sequence="true">
+                <comment>Primary key</comment>
+            </field>
+            <field name="userid" type="int" length="10" unsigned="true" notnull="true">
+                <comment>User ID</comment>
+            </field>
+            <field name="courseenrolled" type="int" length="10" unsigned="true" notnull="true">
+                <comment>Courses enrolled</comment>
+            </field>
+            <field name="coursecompleted" type="int" length="10" unsigned="true" notnull="true">
+                <comment>Courses completed</comment>
+            </field>
+            <field name="activitycompleted" type="int" length="10" unsigned="true" notnull="true">
+                <comment>Activity completed</comment>
+            </field>
+            <field name="activitiesdue" type="int" length="10" unsigned="true" notnull="true">
+                <comment>Activities due</comment>
+            </field>
+        </fields>
+        <indexes>
+            <index name="primary" type="primary">
+                <field name="id"/>
+            </index>
+        </indexes>
+    </table>
+</xmldb>
